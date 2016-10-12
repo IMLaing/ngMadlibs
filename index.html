@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div ng-app="">
+        <header>
+            <div class="brandLogo"><img src="http://clipartix.com/wp-content/uploads/2016/05/Happy-face-clip-art-smiley-face-clipart-3-clipartcow.jpg" alt="" /></div>
+            <div class="title">
+                <h2>ngMadlibs</h2>
+                <h1>Automate This!</h1>
+            </div>
+        </header>
+
+        <div class="questionSelectContainer">
+            <form>
+                <input type="text" ng-model="adj1" placeholder="adjective" required/>
+                <input type="text" ng-model="adj2" placeholder="adjective" required/>
+                <input type="text" ng-model="adj3" placeholder="adjective" required/>
+                <input type="text" ng-model="noun1" placeholder="noun" required/>
+                <input type="text" ng-model="noun2" placeholder="noun" required/>
+                <input type="text" ng-model="verbed1"placeholder="verb ending in ed" required/>
+                <input type="text" ng-model="noun3" placeholder="noun" required/>
+                <input type="text" ng-model="noun4" placeholder="noun" required/>
+                <input type="text" ng-model="place"placeholder="place" required/>
+                <input type="text" ng-model="noun5" placeholder="noun" required/>
+                <input type="text" ng-model="adj4"placeholder="adjective" required/>
+                <input type="text" ng-model="verbing"placeholder="verb ending in ing" required/>
+                <input type="text" ng-model="noun6" placeholder="noun" required/>
+                <input type="text" ng-model="verbed2"placeholder="verb ending in ed" required/>
+                <input type="text" ng-model="adverb"placeholder="adverb" required/>
+                <input type="text" ng-model="nounP" placeholder="plural noun" required/>
+                <input type="text" ng-model="adj5" placeholder="adjective" required/>
+                <input type="text" ng-model="adj6" placeholder="adjective" required/>
+                <input type="text" ng-model="adj7" placeholder="adjective" required/>
+                <input type="text" ng-model="femalename" placeholder="female name" required/>
+                <button ng-click="showMadlib=true">Create the Madlib!</button>
+            </form>
+        </div>
+        <div ng-if="showMadlib" class="madlibText">
+            <p>Once upon a midnight {{adj1}}, while I pondered {{adj2}} and {{adj3}},
+                Over many a quaint and curious {{noun1}} of forgotten {{noun2}},
+                While I {{verbed1}}, nearly napping, suddenly there came a {{noun3}},
+                As of {{noun4}} gently rapping, rapping at my {{place}} door.
+                ``Tis some {{noun5}},` I muttered, `tapping at my {{place}} door -
+                Only this, and nothing more.`
+
+                Ah, distinctly I remember it was in the {{adj4}} December,
+                And each separate {{verbing}} ember wrought its {{noun6}} upon the floor.
+                Eagerly I {{verbed2}} the morrow; - {{adverb}} I had sought to borrow
+                From my {{nounP}} surcease of sorrow - sorrow for the {{adj5}} Lenore -
+                For the {{adj6}} and {{adj7}} maiden whom the angels named {{femalename}} -
+                Nameless here for evermore.
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>

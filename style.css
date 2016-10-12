@@ -1,0 +1,28 @@
+*{
+font-family: calibri light;
+}
+header{
+width: 50%;
+margin: 0 auto;
+}
+header > div {
+display: inline-block;
+margin: 50px;
+}
+img{
+height: 100px;
+width: 100px;
+}
+
+form{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-content: center;
+}
+input {
+padding: 4px;
+margin: 2px;
+flex: 1 0 300px;
+}
