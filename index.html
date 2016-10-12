@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    
+    <script src="myApp.js"></script>
 </head>
-<body>
-    <div ng-app="">
+    <body>
+    <div>
         <header>
             <div class="brandLogo"><img src="http://clipartix.com/wp-content/uploads/2016/05/Happy-face-clip-art-smiley-face-clipart-3-clipartcow.jpg" alt="" /></div>
             <div class="title">
@@ -18,7 +18,7 @@
             </div>
         </header>
 
-        <div class="questionSelectContainer">
+        <div class="questionSelectContainer" ng-controller="myCtrl">
             <form>
                 <input type="text" ng-model="adj1" placeholder="adjective" required/>
                 <input type="text" ng-model="adj2" placeholder="adjective" required/>
@@ -40,10 +40,7 @@
                 <input type="text" ng-model="adj6" placeholder="adjective" required/>
                 <input type="text" ng-model="adj7" placeholder="adjective" required/>
                 <input type="text" ng-model="femalename" placeholder="female name" required/>
-                <button ng-click="showMadlib=true">Create the Madlib!</button>
             </form>
-        </div>
-        <div ng-if="showMadlib" class="madlibText">
             <p>Once upon a midnight {{adj1}}, while I pondered {{adj2}} and {{adj3}},
                 Over many a quaint and curious {{noun1}} of forgotten {{noun2}},
                 While I {{verbed1}}, nearly napping, suddenly there came a {{noun3}},
@@ -58,8 +55,8 @@
                 For the {{adj6}} and {{adj7}} maiden whom the angels named {{femalename}} -
                 Nameless here for evermore.
             </p>
-
         </div>
+           
     </div>
 </body>
 </html>
