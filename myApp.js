@@ -6,7 +6,7 @@ var app = angular.module('myApp',['ngMessages', 'ngAnimate'])
         vm.questionInput = [
             {placeholder:"adjective", model:"adj1"},
             {placeholder:"adjective", model:"adj2"},
-            {placeholder:"adjective", model:"adj3"},/*
+            {placeholder:"adjective", model:"adj3"},
             {placeholder:"noun", model:"noun1"},
             {placeholder:"noun", model:"noun2"},
             {placeholder:"verb ending in ed", model:"verbed1"},
@@ -22,7 +22,7 @@ var app = angular.module('myApp',['ngMessages', 'ngAnimate'])
             {placeholder:"plural noun", model:"nounP"},
             {placeholder:"adjective", model:"adj5"},
             {placeholder:"adjective", model:"adj6"},
-            {placeholder:"adjective", model:"adj7"},*/
+            {placeholder:"adjective", model:"adj7"},
             {placeholder:"female name", model:"femalename"}
         ],
         vm.submit = function(){
